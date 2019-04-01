@@ -33,8 +33,32 @@ namespace CaracterAndando
             Pulando = false;
         }
 
-        public void pula(){ }
-        public void anda(){ }
+        public void pula()
+        {
+            Console.Beep(234, 100);
+        }
+
+        public void anda(Boolean direcao, Byte limite)
+        {
+            if (direcao)
+            {
+                // ANDA PARA DIREITA
+                if (Posicao < limite)
+                {
+                    Posicao++;
+                    Aparencia = ViradoDireita;
+                }
+            }
+            else
+            {
+                // ANDA PARA ESQUERDA
+                if (Posicao > 0)
+                {
+                    Posicao--;
+                    Aparencia = ViradoEsquerda;
+                }
+            }
+        }
 
         /*
         public void confAparencia(String valor) { Aparencia = valor; }
