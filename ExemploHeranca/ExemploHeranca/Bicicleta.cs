@@ -18,16 +18,19 @@ namespace ExemploHeranca
         public override void Acelera()
         {
             // PEDALANDO MAIS FORTE
+            Console.WriteLine("NHEC-NHEC-NHEC");
         }
 
         public override void Freia()
         {
             // COLOCANDO O CHINELO NO PNEU
+            Console.WriteLine("OWA-OWA-OWA");
         }
 
         public override void TrocaMarcha()
         {
             // USANDO O CAMBIO
+            Console.WriteLine("TREC-TREC");
         }
     }
 }
