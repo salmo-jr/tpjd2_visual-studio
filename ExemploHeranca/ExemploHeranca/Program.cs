@@ -10,13 +10,16 @@ namespace ExemploHeranca
     {
         static void Main(string[] args)
         {
+            
 
-            Sprite heroi = new Sprite();
-            Sprite inimigo;
 
-            heroi.Nome = "Batman";
-            heroi.PosicaoX = 100;
-            heroi.andaEsquerda();
+            Carro gol = new Carro();
+            gol.Marca = "Volkswagen";
+            gol.Acelera();
+
+            Bicicleta bike = new Bicicleta();
+            bike.Acelera();
+            
         }
     }
 }
